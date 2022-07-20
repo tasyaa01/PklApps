@@ -8,21 +8,65 @@
 </head>
 <body>
     <center><h1>Restoran</h1></center>
+    
+    <h4>Pesanan Ke-1</h4>
     @if ($a == 'Ayam Goreng')
-        <br> Pesanan : {{$a}}
-        <br> Harga {{$a}} : Rp.15000
+        Pesanan : {{$a}}
+        <br> 
+        Harga {{$a}} : Rp.15000
+
+    @elseif ($a == 'Lobster')
+        Pesanan : {{$a}}
+        <br> 
+        Harga {{$a}} : Rp.20000
+
     @elseif ($a == 'Pizza')
-        <br> Pesanan : {{$a}}
-        <br> harga {{$a}} Rp.20000
+        Pesanan : {{$a}}
+        <br> 
+        Harga {{$a}} : Rp.20000
+
     @elseif ($a == 'Tiramisu')
-        <br> Pesanan : {{$a}}
-        <br> harga {{$a}} Rp.30000
+        Pesanan : {{$a}}
+        <br> 
+        Harga {{$a}} : Rp.30000
+
     @elseif ($a == 'Pasta')
-        <br> Pesanan : {{$a}}
-        <br> harga {{$a}} Rp.25000
+        Pesanan : {{$a}}
+        <br> 
+        Harga {{$a}} : Rp.25000
+
     @else
-        <br>
-        {{$a}}
+        {{$c}}
+    @endif
+
+    <h4>Pesanan Ke-2</h4>
+    @if ($b == 'Ayam Goreng')
+        Pesanan : {{$b}}
+        <br> 
+        Harga {{$b}} : Rp.15000
+
+    @elseif ($b == 'Lobster')
+        Pesanan : {{$b}}
+        <br> 
+        Harga {{$b}} : Rp.20000
+
+    @elseif ($b == 'Pizza')
+        Pesanan : {{$b}}
+        <br> 
+        Harga {{$b}} : Rp.20000
+
+    @elseif ($b == 'Tiramisu')
+        Pesanan : {{$b}}
+        <br> 
+        Harga {{$b}} : Rp.30000
+
+    @elseif ($b == 'Pasta')
+        Pesanan : {{$b}}
+        <br> 
+        Harga {{$b}} : Rp.25000
+
+    @else
+        {{$c}}
     @endif
 </body>
 </html>
